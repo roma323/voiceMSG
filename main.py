@@ -61,7 +61,9 @@ Example: ^ Lentach \n Enter the person's id or write his name and surname by put
 				self.first = self.friends[x]['first_name']
 				self.last = self.friends[x]['last_name']
 				self.full_name = ('%s %s' % (self.first,self.last))
-				if self.full_name == self.ID:
+                		self.full_name2 = ('%s %s' % (self.last,self.first))
+
+				if (self.full_name == self.ID) or (self.full_name2 == self.ID):
 					self.ID_EDIT = self.friends[x]['id']
 					break
 			del(self.first)
